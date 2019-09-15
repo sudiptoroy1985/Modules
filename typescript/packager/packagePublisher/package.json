@@ -1,0 +1,9 @@
+{
+    "name": "common-service",
+    "version": "0.0.1",
+    "description": "common library",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc"
+    }
+}

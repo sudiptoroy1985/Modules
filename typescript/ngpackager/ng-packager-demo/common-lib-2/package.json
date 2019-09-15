@@ -1,0 +1,16 @@
+{
+  "name": "common-lib-2",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/core": "8.2.1"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public-api.ts"
+    },
+    "dest": "../dist/lib2"
+  },
+  "dependencies": {
+    "common-lib": "file:../common-lib/dist"
+  }
+}
