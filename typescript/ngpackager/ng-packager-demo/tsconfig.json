@@ -25,6 +25,18 @@
       ],
       "commonlib3/*": [
         "dist/commonlib3/*"
+      ],
+      "commonlib4": [
+        "dist/commonlib4"
+      ],
+      "commonlib4/*": [
+        "dist/commonlib4/*"
+      ],
+      "commonlib4element": [
+        "dist/commonlib4element"
+      ],
+      "commonlib4element/*": [
+        "dist/commonlib4element/*"
       ]
     }
   }

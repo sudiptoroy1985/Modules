@@ -1,19 +1,19 @@
+import { Commonlib3Service } from './commonlib3.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-commonlib3',
-  template: `
-    <p>
-      commonlib3 works!
-    </p>
-  `,
+  templateUrl: './commonlib4.component.html',
   styles: []
 })
 export class Commonlib3Component implements OnInit {
 
-  constructor() { }
+  public message: String = '';
+
+  constructor(private svc: Commonlib3Service) { }
 
   ngOnInit() {
+    this.message = this.svc.getMessage();
   }
 
 }

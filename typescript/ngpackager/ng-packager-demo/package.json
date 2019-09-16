@@ -8,8 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-lib": "ng-packagr -p common-lib/package.json",
-    "build-lib-2": "ng-packagr -p common-lib-2/package.json"
+    "combined-build": "ng build commonlib3 && ng build commonlib4 && ng serve --prod --watch=true"
   },
   "private": true,
   "dependencies": {
@@ -17,10 +16,11 @@
     "@angular/common": "^6.1.0",
     "@angular/compiler": "^8.2.1",
     "@angular/core": "8.2.1",
+    "@angular/elements": "^8.2.6",
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
-    "common-lib": "file:common-lib/lib-dist",
+    "@webcomponents/custom-elements": "^1.2.4",
     "core-js": "^2.5.4",
     "rxjs": "~6.2.0",
     "tslib": "^1.10.0",
